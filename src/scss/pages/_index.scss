@@ -1,0 +1,35 @@
+.index-page {
+  .phone {
+    background: url('~images/gray-bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    // position: relative;
+
+    &-col {
+      width: 50%;
+      float: left;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &-para {
+      width: 50%;
+      padding-right: 30px;
+      box-sizing: border-box;
+    }
+
+    &:after {
+      display: block;
+      content: '';
+      width: 0;
+      height: 0;
+      border-right: 100vw solid red;
+      border-top: 100px solid transparent;
+    }
+  }
+}
