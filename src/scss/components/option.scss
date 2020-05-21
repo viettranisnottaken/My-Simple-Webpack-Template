@@ -1,0 +1,25 @@
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  border: 1px solid $primary-color;
+  background-color: $secondary-color;
+  color: $primary-color;
+  padding: 10px 20px;
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+
+  &--disabled {
+    border: 1px solid $disabled-color;
+    background-color: $disabled-color;
+    color: $disabled-text-color;
+  }
+
+  &--selected {
+    border: 1px solid $primary-color;
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
+}

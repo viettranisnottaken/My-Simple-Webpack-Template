@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style Guide</title>
+  </head>
+  <body>
+    <main class="style-guide">
+      <section class="buttons">
+        <h1>Buttons</h1>
+        <button class="button button--primary">
+          button primary
+        </button>
+        <button class="button button--danger">
+          button danger
+        </button>
+      </section>
+      <hr />
+      <section class="colors">
+        <h1>Colors</h1>
+        <div class="content">
+          <div class="primary"></div>
+          <div class="secondary"></div>
+          <div class="disabled"></div>
+          <div class="disabled-text"></div>
+          <div class="danger"></div>
+        </div>
+      </section>
+      <hr />
+      <section class="options">
+        <h1>Options</h1>
+        <div class="option">Option</div>
+        <div class="option option--disabled">Disabled option</div>
+        <div class="option option--selected">Selected option</div>
+      </section>
+      <hr />
+      <section class="arrows">
+        <h1>Arrows</h1>
+        <button class="arrow arrow--primary">
+          <svg class="arrow__content">
+            <polyline
+              class="arrow--primary__drawing"
+              points="28,20 17,30 28,40"
+            />
+            <line
+              class="arrow--primary__drawing"
+              x1="17"
+              y1="30"
+              x2="40"
+              y2="30"
+            />
+          </svg>
+        </button>
+      </section>
+    </main>
+  </body>
+</html>

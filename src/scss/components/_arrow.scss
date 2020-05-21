@@ -1,0 +1,36 @@
+.arrow {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  padding: 0;
+
+  &__content {
+    width: 60px;
+    height: 60px;
+
+    &--sm {
+    }
+
+    &--lg {
+    }
+  }
+
+  &--primary {
+    border: 1px solid $disabled-color;
+    background-color: $secondary-color;
+
+    &__drawing {
+      fill: none;
+      stroke: $primary-color;
+      stroke-width: 3px;
+    }
+  }
+
+  &--sm {
+  }
+
+  &--lg {
+  }
+}

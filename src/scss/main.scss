@@ -1,21 +1,30 @@
+@import "~bootstrap/scss/bootstrap";
+@import "vendors/_bootstrap_overridden_variables.scss";
+
 $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
-@import '~@fortawesome/fontawesome-free/scss/fontawesome';
-@import '~@fortawesome/fontawesome-free/scss/solid';
-@import '~@fortawesome/fontawesome-free/scss/brands';
-@import '~@fortawesome/fontawesome-free/scss/regular';
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
 
-@import 'utils/variables';
-@import 'utils/functions';
-@import 'utils/helpers';
-@import 'utils/mixins';
+@import "utils/variables";
+@import "utils/functions";
+@import "utils/helpers";
+@import "utils/mixins";
 
-@import 'base/reset';
-@import 'base/typography';
+@import "base/reset";
+@import "base/typography";
 
-@import 'layout/grid';
-@import 'layout/header';
-@import 'layout/navigation';
-@import 'layout/footer';
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/footer";
 
-@import 'pages/home';
-@import 'pages/about';
+@import "components/buttons";
+@import "components/calendar";
+@import "components/option";
+@import "components/arrow";
+@import "components/style_guide";
+
+@import "pages/home";
+@import "pages/about";

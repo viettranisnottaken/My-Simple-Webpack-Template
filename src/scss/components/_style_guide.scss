@@ -1,0 +1,55 @@
+.style-guide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1140px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid $disabled-color;
+
+  & > * {
+    width: 80%;
+  }
+
+  .buttons {
+  }
+
+  .colors {
+    .content * {
+      display: inline-block;
+      margin: 10px;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      content: "";
+      border: 1px solid #000000;
+    }
+
+    .primary {
+      background-color: $primary-color;
+    }
+
+    .secondary {
+      background-color: $secondary-color;
+    }
+
+    .disabled {
+      background-color: $disabled-color;
+    }
+
+    .disabled-text {
+      background-color: $disabled-text-color;
+    }
+
+    .danger {
+      background-color: $danger-color;
+    }
+  }
+
+  .options {
+  }
+
+  .arrows {
+  }
+}
