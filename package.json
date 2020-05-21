@@ -9,7 +9,9 @@
     "build:production": "webpack --mode production --config webpack.config.js",
     "watch": "webpack --watch"
   },
-  "dependencies": {},
+  "dependencies": {
+    "chart.js": "^2.9.3"
+  },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",
     "autoprefixer": "^9.7.3",
