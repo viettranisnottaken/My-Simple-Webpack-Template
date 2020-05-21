@@ -6,7 +6,7 @@ export function drawMaleChart() {
   var chart = new Chart(myChart, {
     type: "horizontalBar",
     data: getMaleChartData(),
-    options: chartOptions(),
+    options: maleChartOptions(),
   });
 }
 
@@ -16,7 +16,7 @@ export function drawFemaleChart() {
   var chart = new Chart(myChart, {
     type: "horizontalBar",
     data: getFemaleChartData(),
-    options: chartOptions(),
+    options: femaleChartOptions(),
   });
 }
 
@@ -48,7 +48,24 @@ function getFemaleChartData() {
   };
 }
 
-function chartOptions() {
+function maleChartOptions() {
+  return {
+    scales: {
+      xAxes: [
+        {
+          ticks: {
+            // Include a dollar sign in the ticks
+            callback: function (value, index, values) {
+              return value * -1;
+            },
+          },
+        },
+      ],
+    },
+  };
+}
+
+function femaleChartOptions() {
   return {};
 }
 
